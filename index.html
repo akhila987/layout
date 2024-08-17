@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: "header article1 article1"
+                                  "header hero main"
+                                   "article hero main"
+                                   "article footer footer";
+                                  
+    height: 100%;
+
+        }
+        .c1{
+            grid-area: header;
+            background-color: rgba(165, 42, 42, 0.548);
+           text-align: center;
+           align-content: center;
+           border: 3px solid pink;
+          gap: 10px;
+        }
+        .c7{
+            grid-area: article1;
+            background-color: aquamarine;
+            text-align: center;
+           align-content: center;
+           border: 3px solid pink;
+        }
+        
+         .c3{
+            grid-area: hero;
+            background-color: rgba(42, 120, 165, 0.548);
+            text-align: center;
+           align-content: center;
+           border: 3px solid pink;
+        }
+        .c4{
+            grid-area: main;
+            background-color: rgba(165, 126, 42, 0.548);
+            text-align: center;
+           align-content: center;
+           border: 3px solid pink;
+        }
+        .c5{
+            grid-area: article;
+            background-color: rgba(75, 42, 165, 0.356);
+            text-align: center;
+           align-content: center;
+           border: 3px solid pink;
+        }
+         .c6{
+            grid-area: footer;
+            background-color: rgba(132, 165, 42, 0.836);
+            text-align: center;
+           align-content: center;
+           border: 3px solid pink;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="c1">header</div>
+<div class="c7">article1</div>
+<div class="c3">hero</div>
+<div class="c4">main</div>
+<div class="c5">article</div>
+<div class="c6">footer</div>
+</div>
+</body>
+</html>
